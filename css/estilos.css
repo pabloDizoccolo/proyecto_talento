@@ -283,6 +283,9 @@ footer {
 
 /* Responsividad */
 @media (max-width: 768px) {
+    header {
+        padding: 0.5rem 2rem;
+    }
     .mediosPago img {
         display: none;
     }
@@ -301,6 +304,10 @@ footer {
 }
 
 @media (max-width: 480px) {
+    header {
+        padding: 0.5rem rem;
+    }
+
     .mediosPago img {
         display: none;
     }
