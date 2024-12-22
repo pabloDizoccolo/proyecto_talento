@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos - La Cucina Italiana</title>
+    <script src="https://kit.fontawesome.com/cbbd236219.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="icon" href="../favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <img src="../assets/images/logo.png" alt="La Cucina Italiana" class="logo">
+        <a href="../index.html"><img src="../assets/images/logo.png" alt="La Cucina Italiana" class="logo"></a>
         <ul>
             <li><a href="https://wa.me/5491199994444" target="_blank" >11-9999-4444</a></li>
             <li><a href="mailto:info@lacucinaitaliana.com.ar">info@lacucinaitaliana.com.ar</a></li>
@@ -23,70 +25,238 @@
             <li><a href="../index.html" class="enlace-nav">Inicio</a></li>
             <li><a href="productos.html" class="enlace-nav">Productos</a></li>
             <li><a href="contacto.html" class="enlace-nav">Contacto</a></li>
-            <li><a href="carrito.html" class="enlace-nav">Carrito</a></li>
+            <li><a href="carrito.html" class="enlace-nav"><i class="fa-solid fa-cart-shopping"></i></a></li>
         </ul>
     </nav>
     <main>
+        <h2 class="titulo-productos">Pizzas</h2>
         <section class="lista-productos grid">
             <div class="tarjeta-producto">
                 <img src="../assets/images/pizza_margarita.jpg" alt="Pizza Margherita" class="imagen-producto">
-                <h3 class="nombre-producto">Pizza Margherita</h3>
-                <p class="descripcion-producto">Deliciosa pizza con salsa de tomate, mozzarella y albahaca.</p>
-                <p class="precio-producto">$XXX</p>
-                <button class="boton">Agregar al Carrito</button>
+                <h3 class="nombre-producto">Margherita</h3>
+                <p class="descripcion-producto">Salsa de tomate, mozzarella y albahaca.</p>
+                <p class="precio-producto">$7.000,23</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="pizza_margarita.jpg" data-nombre="Pizza Margherita" data-precio="7000.231">Agregar al Carrito</button>
             </div>
             <div class="tarjeta-producto">
-                <img src="../assets/images/pizza_margarita.jpg" alt="Pizza Margherita" class="imagen-producto">
-                <h3 class="nombre-producto">Pizza Margherita</h3>
-                <p class="descripcion-producto">Deliciosa pizza con salsa de tomate, mozzarella y albahaca.</p>
-                <p class="precio-producto">$XXX</p>
-                <button class="boton">Agregar al Carrito</button>
+                <img src="../assets/images/pizza_napolitana.jpg" alt="Pizza Napolitana" class="imagen-producto">
+                <h3 class="nombre-producto">Napolitana</h3>
+                <p class="descripcion-producto">Salsa de tomate, rodajas de tomare, ajo, mozzarella y albahaca.</p>
+                <p class="precio-producto">$8.000</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="pizza_napolitana.jpg" data-nombre="Pizza Napolitana" data-precio="8000.00">Agregar al Carrito</button>
             </div>
             <div class="tarjeta-producto">
-                <img src="../assets/images/pizza_margarita.jpg" alt="Pizza Margherita" class="imagen-producto">
-                <h3 class="nombre-producto">Pizza Margherita</h3>
-                <p class="descripcion-producto">Deliciosa pizza con salsa de tomate, mozzarella y albahaca.</p>
-                <p class="precio-producto">$XXX</p>
-                <button class="boton">Agregar al Carrito</button>
+                <img src="../assets/images/pizza_marinara.jpg" alt="Pizza Marinara" class="imagen-producto">
+                <h3 class="nombre-producto">Marinara</h3>
+                <p class="descripcion-producto">Salsa de tomate, ajo, orégano y aceite de oliva virgen extra.</p>
+                <p class="precio-producto">$6.500</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="pizza_marinara.jpg" data-nombre="Pizza Marinara" data-precio="6500.00">Agregar al Carrito</button>
             </div>
             <div class="tarjeta-producto">
-                <img src="../assets/images/pizza_margarita.jpg" alt="Pizza Margherita" class="imagen-producto">
-                <h3 class="nombre-producto">Pizza Margherita</h3>
-                <p class="descripcion-producto">Deliciosa pizza con salsa de tomate, mozzarella y albahaca.</p>
-                <p class="precio-producto">$XXX</p>
-                <button class="boton">Agregar al Carrito</button>
+                <img src="../assets/images/pizza_calabresa.jpg" alt="Pizza Calabresa" class="imagen-producto">
+                <h3 class="nombre-producto">Calabresa</h3>
+                <p class="descripcion-producto">Salsa de tomate, aceite de oliva, mozzarella y longaniza.</p>
+                <p class="precio-producto">$11.000</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="pizza_calabresa.jpg" data-nombre="Pizza Calabresa" data-precio="11000.00">Agregar al Carrito</button>
             </div>
             <div class="tarjeta-producto">
-                <img src="../assets/images/pizza_margarita.jpg" alt="Pizza Margherita" class="imagen-producto">
-                <h3 class="nombre-producto">Pizza Margherita</h3>
-                <p class="descripcion-producto">Deliciosa pizza con salsa de tomate, mozzarella y albahaca.</p>
-                <p class="precio-producto">$XXX</p>
-                <button class="boton">Agregar al Carrito</button>
+                <img src="../assets/images/pizza_quattro_formaggi.jpg" alt="Pizza Quattro Formaggi" class="imagen-producto">
+                <h3 class="nombre-producto">Quattro Formaggi</h3>
+                <p class="descripcion-producto">Salsa de tomate, mozzarella, gorgonzola, parmesano y fontina.</p>
+                <p class="precio-producto">$12.000</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="pizza_quattro_formaggi.jpg" data-nombre="Pizza Quattro Formaggi" data-precio="12000.00">Agregar al Carrito</button>
+            </div>
+        </section>
+        <h2 class="titulo-productos">Pastas</h2>
+        <section class="lista-productos grid">
+            <div class="tarjeta-producto">
+                <img src="../assets/images/lasagna.jpg" alt="Lasagna Tradicional" class="imagen-producto">
+                <h3 class="nombre-producto">Lasagna Tradicional</h3>
+                <p class="descripcion-producto">Capas de pasta con salsa boloñesa, bechamel y queso gratinado.</p>
+                <p class="precio-producto">$7.400</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="lasagna.jpg" data-nombre="Lasagna Tradicional" data-precio="7400.00">Agregar al Carrito</button>
             </div>
             <div class="tarjeta-producto">
-                <img src="../assets/images/pizza_margarita.jpg" alt="Pizza Margherita" class="imagen-producto">
-                <h3 class="nombre-producto">Pizza Margherita</h3>
-                <p class="descripcion-producto">Deliciosa pizza con salsa de tomate, mozzarella y albahaca.</p>
-                <p class="precio-producto">$XXX</p>
-                <button class="boton">Agregar al Carrito</button>
+                <img src="../assets/images/pasta_alfredo.jpg" alt="Pasta Alfredo" class="imagen-producto">
+                <h3 class="nombre-producto">Pasta Alfredo</h3>
+                <p class="descripcion-producto">Exquisita pasta con crema, queso parmesano y trozos de pollo.</p>
+                <p class="precio-producto">$5.000</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="pasta_alfrdo.jpg" data-nombre="Pasta Alfredo" data-precio="5000.00">Agregar al Carrito</button>
             </div>
             <div class="tarjeta-producto">
-                <img src="../assets/images/pizza_margarita.jpg" alt="Pizza Margherita" class="imagen-producto">
-                <h3 class="nombre-producto">Pizza Margherita</h3>
-                <p class="descripcion-producto">Deliciosa pizza con salsa de tomate, mozzarella y albahaca.</p>
-                <p class="precio-producto">$XXX</p>
-                <button class="boton">Agregar al Carrito</button>
+                <img src="../assets/images/orecchiette_brocoli.jpg" alt="Orecchiette con Brócoli" class="imagen-producto">
+                <h3 class="nombre-producto">Orecchiette con Brócoli</h3>
+                <p class="descripcion-producto">Orecchiette, brócoli, ajo, anchoas y aceite de oliva.</p>
+                <p class="precio-producto">$4.000</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="orecchiette_brocoli.jpg" data-nombre="Orecchiette con Brócoli" data-precio="4000.00">Agregar al Carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="../assets/images/penne_allarrabbiata.jpg" alt="Penne all'Arrabbiata" class="imagen-producto">
+                <h3 class="nombre-producto">Penne all'Arrabbiata</h3>
+                <p class="descripcion-producto">Penne, salsa de tomate casera, ajo, ají molido picante y aceite de oliva.</p>
+                <p class="precio-producto">$5.500</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="penne_allarrabbiata.jpg" data-nombre="Penne all'Arrabbiata" data-precio="5500.00">Agregar al Carrito</button>
             </div>            
+            <div class="tarjeta-producto">
+                <img src="../assets/images/tagliatelle_bolognese.jpg" alt="Tagliatelle alla Bolognese" class="imagen-producto">
+                <h3 class="nombre-producto">Tagliatelle alla Bolognese</h3>
+                <p class="descripcion-producto">Tagliatelle, salsa de carne (mezcla de carne picada vacuna y de cerdo), tomate, zanahoria, cebolla, apio y un toque de vino tinto.</p>
+                <p class="precio-producto">$5.800</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="tagliatelle_bolognese.jpg" data-nombre="Tagliatelle alla Bolognese" data-precio="5800.00">Agregar al Carrito</button>
+            </div>   
+            <div class="tarjeta-producto">
+                <img src="../assets/images/casarecce_al_pesto.jpg" alt="Casarecce al Pesto" class="imagen-producto">
+                <h3 class="nombre-producto">Casarecce al Pesto</h3>
+                <p class="descripcion-producto">Casarecce, pesto de albahaca (albahaca fresca, ajo, nueces o almendras, queso rallado y aceite de oliva).</p>
+                <p class="precio-producto">$4.700</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="casarecce_al_pesto.jpg" data-nombre="Casarecce al Pesto" data-precio="4700.00">Agregar al Carrito</button>
+            </div>   
+
+        </section>
+        <h2 class="titulo-productos">Postres</h2>
+        <section class="lista-productos grid">
+            <div class="tarjeta-producto">
+                <img src="../assets/images/panna_cotta.jpg" alt="Panna Cotta" class="imagen-producto">
+                <h3 class="nombre-producto">Panna Cotta</h3>
+                <p class="descripcion-producto">Crema cocida a base de leche, crema y azúcar, aromatizada con vainilla y acompañada con salsas de frutas o caramelo.</p>
+                <p class="precio-producto">$4.900</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="panna_cotta.jpg" data-nombre="Panna Cotta" data-precio="4900.00">Agregar al Carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="../assets/images/tiramisu.jpg" alt="Tiramisú" class="imagen-producto">
+                <h3 class="nombre-producto">Tiramisú</h3>
+                <p class="descripcion-producto">Capas de bizcochos empapados en café y licor, intercaladas con crema de mascarpone y espolvoreadas con cacao.</p>
+                <p class="precio-producto">$4.500</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="tiramisu.jpg" data-nombre="Tiramisú" data-precio="4500.00">Agregar al Carrito</button>
+            </div>
+            <div class="tarjeta-producto">
+                <img src="../assets/images/tartufo_di_pizzo.jpg" alt="Tartufo di Pizzo" class="imagen-producto">
+                <h3 class="nombre-producto">Tartufo di Pizzo</h3>
+                <p class="descripcion-producto">Helado de chocolate y avellanas con un corazón de chocolate fundido, recubierto de cacao en polvo.</p>
+                <p class="precio-producto">$7.000</p>
+                <div>
+                    <div class="cantidad-producto">
+                        <button class="restar boton-cantidad">-</button>
+                        <b class="cantidad">1</b>
+                        <button class="sumar boton-cantidad">+</button>
+                    </div>
+                </div>
+                <button class="boton-agregar boton" data-imagen="tartufo_di_pizzo.jpg" data-nombre="Tartufo di Pizzo" data-precio="7000.00">Agregar al Carrito</button>
+            </div>
 
         </section>
     </main>
 
     <footer>
+        <div>
+            <a href="https://wa.me/5491199994444" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <address>
+            <ul>
+                <li>Dirección: Av. Corrientes 1066, Ciudad de Buenos Aires</li>
+                <li>Teléfono: (55) 5555-9999</li>
+                <li>Correo electrónico: <a href="mailto:info@lacucinaitaliana.com.ar">info@lacucinaitaliana.com.ar</a></li>
+            </ul>
+        </address>
+        <div class="mediosPagoPie"> 
+            <img src="../assets/images/medios-de-pago.jpg" alt="">
+        </div>
         <div class="contenedor">
             <p>La Cucina Italiana © 2024 - Todos los derechos reservados</p>
         </div>
     </footer>
 
-    <script src="../js/script.js"></script>
+    <script src="../js/agregar_carrito.js"></script>
 </body>
 </html>

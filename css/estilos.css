@@ -1,3 +1,5 @@
+/* No anidé declaraciones por compatibilidad con los navegadores que aún
+no lo interpretan, a pesar de que me hubiera sido mucho más cómodo y claro*/
 :root{
     --verdeOscuro: rgb(0,76,48);
     --sombraVerde: rgb(0,120,80);
@@ -18,6 +20,26 @@ body {
     background-color: rgb(200,200,200);
 }
 
+.no-mostrar {
+    display:none;
+}
+
+.error {
+    color:red;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+}
+
+ul {
+    margin:0;
+}
+
 /* Contenedor */
 .contenedor {
     width: 90%;
@@ -26,10 +48,12 @@ body {
 }
 
 
+
+/* Cabecera y navegación */
 .mediosPago img{
     max-height: 100px;
 }
-/* Cabecera y navegación */
+
 header {
     padding: 1rem 2rem;
     display: flex;
@@ -45,6 +69,10 @@ header ul {
 header ul li a {
     text-decoration: none;
     color: white;
+}
+
+header ul li a:hover {
+    color: red;
 }
 
 .logo {
@@ -161,7 +189,8 @@ nav ul li{
     color: #b22222;
     font-weight: bold;
     text-align: right;
-    padding-right: 10px;;
+    padding-right: 10px;
+    font-size: 1.5rem;
 }
 
 /* Sección de servicios */
@@ -191,6 +220,11 @@ nav ul li{
 }
 
 /* Lista de productos */
+.titulo-productos {
+    padding:0 20px;
+    background-color: #333;
+    color: white;
+}
 .lista-productos {
     padding: 2rem 10px;
     display: grid;
@@ -226,8 +260,24 @@ nav ul li{
     color: #d40000;
     font-weight: bold;
     margin: 0.5rem 0;
+    font-size: 1.5rem;
 }
 
+.cantidad-producto {
+    display: inline-block;
+    margin-bottom: 5px;
+    border: 2px solid  #d40000;
+}
+.boton-cantidad {
+    background-color: var(--verdeBandera);
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    transition: background-color 0.3s;
+}
+.boton-cantidad:hover{
+    background-color: var(--verdeOscuro);
+}
 /* Formulario de contacto */
 form {
     max-width: 600px;
@@ -269,6 +319,10 @@ form button:hover {
     background-color: #005f27;
 }
 
+.mapa {
+    text-align: center;
+}
+
 /* Pie de página */
 footer {
     background-color: #f2f2f2;
@@ -276,13 +330,55 @@ footer {
     text-align: center;
     margin-top: 2rem;
 }
+footer li{
+    list-style: none;
+}
+footer .fa-whatsapp{
+    font-size: 4rem;
+    color:rgb(44, 181, 44);
+    background-color: rgba(255,255,255,0.7);
+    border-radius: 50%;
+    padding: 2px 5px;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+}
 
 .iconos-redes {
     margin-top: 1rem;
 }
 
+.mediosPagoPie img{
+
+    display: none;
+}
+
+/* Carrito */
+.muestra {
+    max-width: 100px;
+}
 /* Responsividad */
+
+@media (max-width: 800px) {
+    .mediosPago img {
+        display: none;
+    }
+
+    .mediosPagoPie img{
+        display: inline;
+        max-height: 400px;
+
+    }
+
+}
 @media (max-width: 768px) {
+    .mediosPagoPie img{
+        max-width: 300px;
+
+    }
+        .columna-precio, .columna-cantidad {
+        display: none;
+    }
     header {
         padding: 1rem 0.5rem;
     }
@@ -304,12 +400,24 @@ footer {
 }
 
 @media (max-width: 480px) {
+    .logo {
+        max-width: 100px;
+    }
+    .muestra {
+        width: 50px;
+    }
+    .columna-precio, .columna-cantidad {
+        display: none;
+    }
     header {
         padding: 1rem 0rem;
     }
 
     .mediosPago img {
         display: none;
+    }
+    .mediosPagoPie img{
+        max-width: 250px;
     }
     .destacado {
         padding: 1rem;

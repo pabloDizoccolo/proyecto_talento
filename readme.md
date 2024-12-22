@@ -1,0 +1,5 @@
+El proyecto está basado en un sitio web para una casa de comidas italiana. Se desarrolló solo el fornt-end, como parte del curso de "Front-End JS". Al continuar con los próximos cursos de Talento Tech, espero lograr hacerlo un sitio dinámico, incluyendo back-end.
+Para desarrollarlo se tuvo en cuenta las buenas prácticas. Se estructuró el HTML de acuerdo a lo visto en las clases.
+Se dejó pendiente el envío del formulario de contacto para el momento de ver back-end y poder procesarlo.
+El CSS no incluye todo lo visto, porque algunas tecnologías todavía no son soportadas por algunos navegadores no tan actualizados. No se anidaron declaraciones por tal motivo.
+En cuanto al Javascript, se intentó implementar todo lo aprendido en el curso, pero por cuestiones de diseño, algunas herramientas no fueron necesarias.
